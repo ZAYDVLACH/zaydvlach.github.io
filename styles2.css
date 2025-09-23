@@ -1,0 +1,128 @@
+/* Reset some browser margins etc */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 200; /* Light */
+  }
+  
+  #main-header {
+    position: fixed;
+    top: 0;
+    left: 30;
+    width: 100%;
+    background-color: #ffffff;
+    height: 60px;
+    display: flex;
+    align-items: center;   /* vertically centers items */
+    justify-content: flex-start; /* moves items to right */
+    padding-right: 20px;   /* optional spacing */
+    transition: top 0.3s;
+    z-index: 1000;
+  }
+  
+  #main-header nav {
+    display: flex;    /* makes links horizontal */
+    gap: 20px;        /* spacing between links */
+  }
+  
+  #main-header nav a {
+    color: rgb(24, 21, 202);
+    text-decoration: none;
+    font-weight: normal;
+  }
+  
+  html {
+    font-family: 'EB Garamond', Garamond, serif; /* or the specific font you want */
+    line-height: 1.6;
+    scroll-behavior: hidden;
+  }
+  
+  body {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  header {
+    margin-bottom: 40px;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin: 0px 0 ;
+  }
+  
+  section {
+    margin-bottom: 0px;
+  }
+
+  .post-text[id],
+h3[id] {
+  scroll-margin-top: 100px; /* matches your #main-header height */
+}
+  
+  .writing-list, .tbw-list {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .writing-list li, .tbw-list li {
+    margin-bottom: 0px;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  a:link,
+    a:visited,
+    a:hover,
+    a:active {
+  color: rgb(24, 21, 202);
+  text-decoration: none; /* optional: removes underline */
+}
+
+.post-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* text gets 2/3, image 1/3 */
+    gap: 1.5rem; /* space between */
+    margin-bottom: 2rem;
+  }
+  
+  .post-text {
+    line-height: 1.6;
+  }
+  
+  .post-image img {
+    max-width: 100%;
+    border-radius: 0px;
+  }
+  
