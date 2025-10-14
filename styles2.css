@@ -13,14 +13,14 @@
   #main-header {
     position: fixed;
     top: 0;
-    left: 30;
+    left: 0;
     width: 100%;
     background-color: #ffffff;
     height: 60px;
     display: flex;
     align-items: center;   /* vertically centers items */
-    justify-content: flex-start; /* moves items to right */
-    padding-right: 20px;   /* optional spacing */
+    justify-content: flex-start; /* separates left and right nav */    
+    padding-left: 20px;   /* optional spacing */
     transition: top 0.3s;
     z-index: 1000;
   }
@@ -34,6 +34,15 @@
     color: rgb(24, 21, 202);
     text-decoration: none;
     font-weight: normal;
+  }
+  #main-header .nav-left {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #main-header .nav-right {
+    margin-left: auto; /* pushes right side to the edge */
+    margin-right: 40px; /* <--- adds right-side space */
   }
   
   html {
